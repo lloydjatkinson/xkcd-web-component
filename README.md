@@ -27,7 +27,9 @@ This is a demonstration of a Web Component written using the Vue Javscript frame
 Read more about Web Components:
 
 https://developer.mozilla.org/en-US/docs/Web/Web_Components
+
 https://developers.google.com/web/fundamentals/web-components/
+
 https://www.webcomponents.org/introduction
 
 ### Why Web Components?
