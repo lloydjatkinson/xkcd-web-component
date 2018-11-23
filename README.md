@@ -18,4 +18,18 @@
 
 ### What is this?
 
-This is a demonstration of a Web Component written using Vue.js. It fetches xkcd comics - either the latest or the specified number.
+This is a demonstration of a Web Component written using the Vue Javscript framework. It fetches xkcd comics - either the latest or the specified number. This is a standard Vue SFC (single-file component) that is then wrapped up in a Web Component by using Vue CLI. Either the Vue SFC or the Web Component can be used.
+
+### What is a Web Component?
+
+> Web components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps.
+
+Read more about Web Components:
+
+https://developer.mozilla.org/en-US/docs/Web/Web_Components
+https://developers.google.com/web/fundamentals/web-components/
+https://www.webcomponents.org/introduction
+
+### Why Web Components?
+
+Web Components are *not* an alternative to Javascript frameworks - this one is written with Vue. The Web Component standard contains a number of other standards - two of which are the Shadow DOM and Custom Elements standards. Web Components encapsulated and contain their own DOM - ensuring compatibility with any other Javascript or CSS on the page.
