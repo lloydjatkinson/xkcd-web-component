@@ -15,3 +15,7 @@
 
 
 ![](doc/xkcd-screenshot.png)
+
+### What is this?
+
+This is a demonstration of a Web Component written using Vue.js. It fetches xkcd comics - either the latest or the specified number.
