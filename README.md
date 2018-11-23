@@ -14,4 +14,4 @@
 ```
 
 
-![](docs/xkcd-screenshot.png)
+![](doc/xkcd-screenshot.png)
