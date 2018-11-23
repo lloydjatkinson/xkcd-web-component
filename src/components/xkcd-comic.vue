@@ -2,14 +2,11 @@
     <div class="container">
         <div v-if="api.success">
             <p class="title">xkcd #{{ comic.num }} - {{ comic.title }}</p>
+            <p class="date">Published {{ formattedDate }}</p>
             <img :src="comic.img" :title="comic.alt" />
         </div>
-        <div v-if="api.pending">
-            <p class="title">{{ api.pendingMessage }}</p>
-        </div>
-        <div v-if="api.failure">
-            <p class="title">{{ api.failureMessage }}</p>
-        </div>
+        <p class="title" v-if="api.pending">{{ api.pendingMessage }}</p>
+        <p class="title" v-if="api.failure">{{ api.failureMessage }}</p>
     </div>
 </template>
 
@@ -43,6 +40,11 @@ export default {
             }
         }
     },
+    computed: {
+        formattedDate () {
+            return `${this.comic.day}/${this.comic.month}/${this.comic.year}`;
+        }
+    },
     async created () {
         try {
             this.api.pending = true;
@@ -64,13 +66,20 @@ export default {
 .container {
     text-align: center;
     font-variant: small-caps;
-    // font-weight: 500px;
+    font-family: sans-serif;
 
     .title {
-        margin: 10px;
-        font-family: sans-serif;
+        margin-top: 0;
+        margin-bottom: 2px;
         font-size: 21px;
         font-weight: 800;
+    }
+
+    .date {
+        margin-bottom: 15px;
+        margin-top: 0;
+        font-size: 16px;
+        font-weight: 500;
     }
 }
 </style>
