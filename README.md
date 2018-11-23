@@ -20,6 +20,8 @@
 
 This is a demonstration of a Web Component written using the Vue Javascript framework. It fetches xkcd comics - either the latest or the specified number. This is a standard Vue SFC (single-file component) that is then wrapped up in a Web Component by using Vue CLI. Either the Vue SFC or the Web Component can be used.
 
+A Web Component is also an ES6 module and can be imported and used as such.
+
 ### What is a Web Component?
 
 > Web components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps.
