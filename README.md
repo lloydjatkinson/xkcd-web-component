@@ -18,7 +18,7 @@
 
 ### What is this?
 
-This is a demonstration of a Web Component written using the Vue Javscript framework. It fetches xkcd comics - either the latest or the specified number. This is a standard Vue SFC (single-file component) that is then wrapped up in a Web Component by using Vue CLI. Either the Vue SFC or the Web Component can be used.
+This is a demonstration of a Web Component written using the Vue Javascript framework. It fetches xkcd comics - either the latest or the specified number. This is a standard Vue SFC (single-file component) that is then wrapped up in a Web Component by using Vue CLI. Either the Vue SFC or the Web Component can be used.
 
 ### What is a Web Component?
 
