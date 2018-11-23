@@ -6,3 +6,6 @@
 
 <xkcd-comic></xkcd-comic>
 ```
+
+
+![](image.png)
