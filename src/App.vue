@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <xkcd-comic number="657" />
     <xkcd-comic />
   </div>
 </template>

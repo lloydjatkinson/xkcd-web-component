@@ -3,7 +3,7 @@
         <div v-if="api.success">
             <p class="title">xkcd #{{ comic.num }} - {{ comic.title }}</p>
             <p class="date">Published {{ formattedDate }}</p>
-            <img :src="comic.img" :title="comic.alt" />
+            <a :href="linkUrl"><img :src="comic.img" :title="comic.alt" /></a>
         </div>
         <p class="title" v-if="api.pending">{{ api.pendingMessage }}</p>
         <p class="title" v-if="api.failure">{{ api.failureMessage }}</p>
@@ -41,6 +41,9 @@ export default {
         }
     },
     computed: {
+        linkUrl () {
+            return `https://xkcd.com/${this.comic.num}`;
+        },
         formattedDate () {
             return `${this.comic.day}/${this.comic.month}/${this.comic.year}`;
         }
@@ -49,6 +52,8 @@ export default {
         try {
             this.api.pending = true;
             const comic = await getLatestComic(this.number);
+
+            if (!this.number) this.comic.num = comic.num;
 
             this.comic = comic;
 
