@@ -2,14 +2,14 @@
 
 ```html
 <html>
-  <head>
+    <head>
       <script src="https://unpkg.com/vue"></script>
       <script src="./xkcd-comic.js"></script>
-  </head>
-<body>
-    <xkcd-comic></xkcd-comic>
-    <xkcd-comic number="657"></xkcd-comic>
-</body>
+    </head>
+    <body>
+        <xkcd-comic></xkcd-comic>
+        <xkcd-comic number="657"></xkcd-comic>
+    </body>
 ```
 
 
