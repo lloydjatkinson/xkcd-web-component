@@ -35,3 +35,5 @@ https://www.webcomponents.org/introduction
 ### Why Web Components?
 
 Web Components are *not* an alternative to Javascript frameworks - this one is written with Vue. The Web Component standard contains a number of other standards - two of which are the Shadow DOM and Custom Elements standards. Web Components encapsulated and contain their own DOM - ensuring compatibility with any other Javascript or CSS on the page.
+
+Web Components also allow for interoperability between Javascript frameworks - especially ones that closely follow the Web Components standard (such as Vue). This means you can write a Vue Web Component and use it inside an Angular component, for example.
