@@ -3,10 +3,22 @@
         <div v-if="api.success">
             <p class="title">xkcd #{{ comic.num }} - {{ comic.title }}</p>
             <p class="date">Published {{ formattedDate }}</p>
-            <a :href="linkUrl"><img :src="comic.img" :title="comic.alt" /></a>
+            <a :href="linkUrl">
+                <img
+                    :src="comic.img"
+                    :title="comic.alt">
+            </a>
         </div>
-        <p class="title" v-if="api.pending">{{ api.pendingMessage }}</p>
-        <p class="title" v-if="api.failure">{{ api.failureMessage }}</p>
+        <p
+            v-if="api.pending"
+            class="title">
+            {{ api.pendingMessage }}
+        </p>
+        <p
+            v-if="api.failure"
+            class="title">
+            {{ api.failureMessage }}
+        </p>
     </div>
 </template>
 
@@ -18,6 +30,7 @@ export default {
     props: {
         number: {
             type: Number,
+            default: undefined
         },
     },
     data () {
@@ -38,7 +51,7 @@ export default {
                 failure: false,
                 failureMessage: 'Unable to get the latest xkcd comic'
             }
-        }
+        };
     },
     computed: {
         linkUrl () {
@@ -64,7 +77,7 @@ export default {
             this.api.failure = true;
         }
     }
-}
+};
 </script>
 
 <style lang="scss">

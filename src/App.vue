@@ -1,19 +1,19 @@
 <template>
-  <div id="app">
-    <xkcd-comic number="657" />
-    <xkcd-comic />
-  </div>
+    <div id="app">
+        <xkcd-comic number="657" />
+        <xkcd-comic />
+    </div>
 </template>
 
 <script>
 import XkcdComic from './components/xkcd-comic.vue';
 
 export default {
-  name: 'app',
-  components: {
-    XkcdComic
-  }
-}
+    name: 'App',
+    components: {
+        XkcdComic
+    }
+};
 </script>
 
 <style lang="scss">
