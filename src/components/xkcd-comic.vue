@@ -29,7 +29,7 @@ export default {
     name: 'XkcdComic',
     props: {
         number: {
-            type: Number,
+            type: [ Number, String ],
             default: undefined
         },
     },
